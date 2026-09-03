@@ -1,4 +1,4 @@
-import styles from "./Skeleton.module.scss";
+import styles from "./skeleton.module.scss";
 
 const ProductCardSkeleton = () => {
   return (
