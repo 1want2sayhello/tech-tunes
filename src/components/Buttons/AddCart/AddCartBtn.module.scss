@@ -1,0 +1,39 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.addToCart {
+  all: unset;
+  margin-top: 8px;
+  min-width: 150px;
+  height: 36px;
+  @include buttonStyles;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.addToCart img {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.added {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $text-color;
+  color: $white;
+}
+.addToCart:hover {
+  @include buttonHover;
+}
+
+.addToCart:active {
+  @include buttonActive;
+}
+
+.addToCart span i {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,264 @@
+.Navbar {
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: $side-border-width;
+  z-index: 25;
+}
+
+.navTop {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.navBottom {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: $side-border-width;
+}
+
+.navLogo {
+  width: clamp(180px, 16vw, 300px);
+  flex-shrink: 0;
+  padding-top: 3rem;
+}
+
+.navLogo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.navActions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.search {
+  width: clamp(140px, 50vw, 520px);
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  border: 3px solid $border-color;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: $text-color;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.searchForm {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.searchForm input:-webkit-autofill,
+.searchForm input:-webkit-autofill:hover,
+.searchForm input:-webkit-autofill:focus {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: inherit;
+  caret-color: inherit;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+  margin: 2px 10px;
+  flex-shrink: 0;
+}
+
+.searchIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.search::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: inherit;
+  border: 2.6px solid transparent;
+  pointer-events: none;
+  transition: border 0.15s ease;
+}
+
+.search input::placeholder {
+  color: $text-color;
+  opacity: 0.8;
+}
+
+.search:focus-within::after {
+  border-color: rgba($primary-color, 0.8);
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.navLinks ul {
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.navLinks li {
+  font-size: clamp(1.2rem, 1.6rem, 2rem);
+  cursor: pointer;
+}
+
+.cartIcon {
+  margin-left: 6rem;
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartIcon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.cartCount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.mobileActions {
+  display: none;
+  width: 60%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mobileActions .cartIcon {
+  width: 20%;
+  height: 20%;
+}
+
+.hamburgerIcon {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.burger {
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  background-color: $border-color;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger.isOpen {
+  display: flex;
+}
+
+@media (max-width: 780px) {
+  .Navbar {
+    height: calc($nav-height * 0.5);
+    padding-left: 2rem;
+  }
+
+  .navTop {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navLogo {
+    padding-top: 0;
+    width: clamp(100px, 25vw, 200px);
+  }
+
+  .navActions {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .search {
+    width: 100%;
+    min-width: 0;
+    height: 40px;
+    border: 2px solid $border-color;
+    margin: 0;
+  }
+
+  .search input::placeholder {
+    padding: 0;
+  }
+
+  .search input:active {
+    box-shadow: inset 0 0 0 3px $secondary-color;
+    transform: translateY(1px);
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .mobileActions {
+    display: flex;
+  }
+}

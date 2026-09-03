@@ -1,0 +1,83 @@
+@use "../../../../sass/variables" as *;
+@use "../../../../sass/mixins" as *;
+
+.detailsContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.2rem;
+
+  background-image: url("/graphics/grain-texture.png");
+  background-size: contain;
+  background-color: rgba($primary-color, 0.4);
+}
+
+.detailsImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+  border: 1px solid $border-color;
+  background-color: rgba($white, 0.6);
+}
+
+.detailsImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description {
+  max-width: 50ch;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.buyNow {
+  flex: 2;
+}
+
+.addToCart {
+  flex: 1;
+}
+
+.errorMessage.visible {
+  opacity: 1;
+  transform: translateY(0);
+  font-weight: 500;
+}
+
+.errorMessage {
+  min-height: 18px;
+  opacity: 0;
+  transform: translateY(-5px);
+  color: rgb(199, 25, 25);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+@media (max-width: 780px) {
+  .details {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

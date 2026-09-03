@@ -1,0 +1,42 @@
+@use "../../../../sass/variables" as *;
+@use "../../../../sass/mixins" as *;
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  min-height: 260px;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.image,
+.line,
+.smallLine,
+.price {
+  @include skeleton-shimmer;
+  border-radius: 0.5rem;
+}
+
+.image {
+  height: 140px;
+  margin-bottom: 1rem;
+}
+
+.line {
+  height: 18px;
+  width: 80%;
+  margin-bottom: 0.75rem;
+}
+
+.smallLine {
+  height: 14px;
+  width: 55%;
+  margin-bottom: 1rem;
+}
+
+.price {
+  height: 20px;
+  width: 35%;
+}

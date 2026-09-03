@@ -1,0 +1,28 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.paginationContainer {
+  width: 175px;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.paginationBtn {
+  all: unset;
+  height: 25px;
+  width: 120px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.paginationBtn:active {
+  @include buttonActive;
+  opacity: 1;
+}

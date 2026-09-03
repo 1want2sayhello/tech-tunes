@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "slug": "tech-tunes-boulder",
+    "name": "Tech Tunes Boulder",
+    "description": "A laid-back mountain-town shop built for crate diggers, gear nerds, and anyone chasing a warmer sound. Browse vinyl, test out audio tech, and hang around for staff picks with a Boulder edge.",
+    "address": {
+      "street": "9087 Loretta RD",
+      "city": "Boulder",
+      "state": "CO",
+      "zip": "80302"
+    },
+    "coordinates": {
+      "lat": 40.014984,
+      "lng": -105.270546
+    },
+    "contact": {
+      "phone": "(303) 555-1234",
+      "email": "boulder@techtunes.com"
+    },
+    "hours": {
+      "monday": "10:00-20:00",
+      "tuesday": "10:00-20:00",
+      "wednesday": "10:00-20:00",
+      "thursday": "10:00-21:00",
+      "friday": "10:00-21:00",
+      "saturday": "11:00-22:00",
+      "sunday": "12:00-18:00"
+    },
+    "images": {
+      "thumbnail": "/thumbs/location/boulder.webp"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "tech-tunes-durango",
+    "name": "Tech Tunes Durango",
+    "description": "A cozy record-and-tech stop with a road-trip feel, stocked for weekend listeners, collectors, and home audio tinkerers. Expect approachable staff, rotating finds, and a shop atmosphere made for slow browsing.",
+    "address": {
+      "street": "5678 Oak Ave",
+      "city": "Durango",
+      "state": "CO",
+      "zip": "81301"
+    },
+    "coordinates": {
+      "lat": 37.2705,
+      "lng": -107.8787
+    },
+    "contact": {
+      "phone": "(970) 555-1234",
+      "email": "durango@techtunes.com"
+    },
+    "hours": {
+      "monday": "10:00-20:00",
+      "tuesday": "10:00-20:00",
+      "wednesday": "10:00-20:00",
+      "thursday": "10:00-21:00",
+      "friday": "10:00-21:00",
+      "saturday": "11:00-22:00",
+      "sunday": "12:00-18:00"
+    },
+    "images": {
+      "thumbnail": "/thumbs/location/durango.webp"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "tech-tunes-colorado-springs",
+    "name": "Tech Tunes Colorado Springs",
+    "description": "A larger, high-energy Tech Tunes location with room for new releases, audio gear, merch, and deep discovery bins. Built for casual listeners and serious collectors who want a little bit of everything in one place.",
+    "address": {
+      "street": "9879 Moore Rapids Drive",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "zip": "80903"
+    },
+    "coordinates": {
+      "lat": 38.859055,
+      "lng": -104.813499
+    },
+    "contact": {
+      "phone": "(719) 555-1234",
+      "email": "coloradosprings@techtunes.com"
+    },
+    "hours": {
+      "monday": "10:00-20:00",
+      "tuesday": "10:00-20:00",
+      "wednesday": "10:00-20:00",
+      "thursday": "10:00-21:00",
+      "friday": "10:00-21:00",
+      "saturday": "11:00-22:00",
+      "sunday": "12:00-18:00"
+    },
+    "images": {
+      "thumbnail": "/thumbs/location/colorado-springs.webp"
+    }
+  }
+]

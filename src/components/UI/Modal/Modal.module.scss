@@ -1,0 +1,30 @@
+@use "../../../sass/variables" as *;
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba($shadow, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.dialog {
+  background-color: $white;
+  border-radius: 20px;
+  max-width: 520px;
+  height: 220px;
+  width: 90%;
+  box-shadow: 2px 2px 12px $shadow;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog:focus {
+  outline: none;
+}

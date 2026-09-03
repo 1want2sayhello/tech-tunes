@@ -1,0 +1,215 @@
+[
+  {
+    "id": 1,
+    "slug": "audio-technica-lp60x",
+    "name": "AT-LP60X",
+    "brand": "Audio-Technica",
+    "type": "belt-drive turntable",
+    "price": 149.99,
+    "rating": 4.6,
+    "image": "/thumbs/products/tech/at-lp60x.webp",
+    "dateAdded": "2024-03-12",
+    "description": "A fully automatic belt-drive turntable designed for beginners, delivering reliable playback and clean sound without complicated setup.",
+    "tags": [
+      "turntable",
+      "record player",
+      "vinyl",
+      "beginner",
+      "automatic",
+      "belt drive",
+      "playback"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "pro-ject-debut-carbon-evo",
+    "name": "Debut Carbon EVO",
+    "brand": "Pro-Ject",
+    "type": "audiophile turntable",
+    "price": 599.99,
+    "rating": 4.8,
+    "image": "/thumbs/products/tech/debut-carbon-evo.webp",
+    "dateAdded": "2026-08-18",
+    "description": "A premium audiophile turntable featuring a carbon tonearm and heavy steel platter, built for rich, detailed vinyl listening.",
+    "tags": [
+      "turntable",
+      "record player",
+      "vinyl",
+      "audiophile",
+      "premium",
+      "carbon tonearm",
+      "hi-fi"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "tech-tunes-vinyl-care-kit",
+    "name": "Vinyl Care Kit",
+    "brand": "Tech Tunes",
+    "type": "vinyl cleaning kit",
+    "price": 29.99,
+    "rating": 4.5,
+    "image": "/thumbs/products/tech/vinyl-kit.png",
+    "dateAdded": "2025-04-10",
+    "description": "A complete vinyl maintenance kit including anti-static brush, cleaning solution, and microfiber cloth to keep records sounding crisp.",
+    "tags": [
+      "cleaning",
+      "vinyl care",
+      "record cleaning",
+      "maintenance",
+      "anti-static",
+      "brush",
+      "microfiber"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "pioneer-dj-djm-250mk2",
+    "name": "DJM-250MK2",
+    "brand": "Pioneer DJ",
+    "type": "2-channel mixer",
+    "price": 349.99,
+    "rating": 4.7,
+    "image": "/thumbs/products/tech/djm-250mk2.webp",
+    "dateAdded": "2023-11-05",
+    "description": "A compact 2-channel mixer with professional-grade sound, smooth crossfader, and built-in sound card for seamless DJ performance.",
+    "tags": [
+      "mixer",
+      "dj",
+      "2-channel",
+      "crossfader",
+      "sound card",
+      "performance",
+      "controller"
+    ]
+  },
+
+  {
+    "id": 5,
+    "slug": "yamaha-hs5",
+    "name": "HS5 Studio Monitor",
+    "brand": "Yamaha",
+    "type": "studio monitor speaker",
+    "price": 199.99,
+    "rating": 4.6,
+    "image": "/thumbs/products/tech/hs5-monitor.png",
+    "dateAdded": "2024-07-22",
+    "description": "A trusted nearfield studio monitor delivering accurate, flat response for mixing and production in small to medium spaces.",
+    "tags": [
+      "speaker",
+      "speakers",
+      "studio monitor",
+      "monitor",
+      "mixing",
+      "production",
+      "nearfield"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "focusrite-scarlett-2i2",
+    "name": "Scarlett 2i2 (3rd Gen)",
+    "brand": "Focusrite",
+    "type": "audio interface",
+    "price": 179.99,
+    "rating": 4.8,
+    "image": "/thumbs/products/tech/scarlett-2i2.webp",
+    "dateAdded": "2025-01-08",
+    "description": "A widely used USB audio interface with clean preamps and low latency, ideal for recording vocals, instruments, and podcasts.",
+    "tags": [
+      "audio interface",
+      "interface",
+      "recording",
+      "usb",
+      "preamps",
+      "podcast",
+      "vocals",
+      "instrument"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "akai-mpc-one",
+    "name": "MPC One",
+    "brand": "Akai Professional",
+    "type": "music production workstation",
+    "price": 699.99,
+    "rating": 4.7,
+    "image": "/thumbs/products/tech/mpc-one.webp",
+    "dateAdded": "2023-08-14",
+    "description": "A standalone music production center featuring pads, sequencing, and sampling tools for beat-making without a computer.",
+    "tags": [
+      "sampler",
+      "sequencer",
+      "beat making",
+      "production",
+      "workstation",
+      "pads",
+      "standalone"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "shure-sm7b",
+    "name": "SM7B",
+    "brand": "Shure",
+    "type": "studio microphone",
+    "price": 399.99,
+    "rating": 4.9,
+    "image": "/thumbs/products/tech/shure-SM7B.webp",
+    "dateAdded": "2025-03-25",
+    "description": "An industry-standard dynamic microphone known for warm, clean vocal capture used in studios, podcasts, and broadcast.",
+    "tags": [
+      "microphone",
+      "mic",
+      "vocal",
+      "vocals",
+      "podcast",
+      "broadcast",
+      "studio",
+      "dynamic microphone"
+    ]
+  },
+
+  {
+    "id": 9,
+    "slug": "fender-mustang-lt25",
+    "name": "Mustang LT25",
+    "brand": "Fender",
+    "type": "guitar amplifier",
+    "price": 159.99,
+    "rating": 4.5,
+    "image": "/thumbs/products/tech/fender-mustang-lt25.webp",
+    "dateAdded": "2024-05-30",
+    "description": "A compact modeling amp with built-in presets and effects, perfect for practice sessions and small recording setups.",
+    "tags": [
+      "amplifier",
+      "amp",
+      "guitar amp",
+      "practice amp",
+      "effects",
+      "presets",
+      "recording"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "numark-pt01-scratch",
+    "name": "PT01 Scratch",
+    "brand": "Numark",
+    "type": "portable turntable",
+    "price": 149.99,
+    "rating": 4.4,
+    "image": "/thumbs/products/tech/pt01-scratch.webp",
+    "dateAdded": "2025-04-18",
+    "description": "A portable turntable built for scratching and on-the-go playback, featuring a built-in speaker and rechargeable battery.",
+    "tags": [
+      "turntable",
+      "record player",
+      "portable",
+      "scratch",
+      "scratching",
+      "built-in speaker"
+    ]
+  }
+]

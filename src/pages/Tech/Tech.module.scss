@@ -1,0 +1,124 @@
+.Tech {
+  width: 100%;
+  height: auto;
+}
+
+.techHero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, $secondary-color, $card-background);
+  overflow: hidden;
+}
+
+.techHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/graphics/grain-texture.png");
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.spray {
+  position: relative;
+  width: clamp(250px, 30vw, 600px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.hand {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.hand img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.mist {
+  position: absolute;
+  transform: translate(75%, -15%);
+  width: clamp(200px, 48vw, 640px);
+  aspect-ratio: 1;
+  opacity: 0.775;
+}
+
+.mist img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.sprayContent {
+  position: absolute;
+  height: 100%;
+  width: clamp(300px, 60vw, 900px);
+  transform: translate(35%, 0%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  z-index: 20;
+}
+
+.sprayHeaders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sprayHeaders h1 {
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 6vw, 3.6rem);
+  font-family: $header-font;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sprayHeaders h3 {
+  padding-top: 1rem;
+  font-size: clamp(1rem, 1.6vw, 2.6rem);
+}
+
+.sprayCTA {
+  width: clamp(125px, 20vw, 225px);
+  height: 70px;
+  background-color: $border-color;
+  color: $white;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 99;
+
+  transition: ease 0.2s;
+}
+
+.sprayCTA:hover {
+  box-shadow:
+    inset 0 0 8px $secondary-color-bright,
+    0 0 36px $secondary-color-bright;
+}
+
+.sprayCTA:active {
+  color: $white;
+  background: $border-color;
+  transform: scale(0.95);
+}

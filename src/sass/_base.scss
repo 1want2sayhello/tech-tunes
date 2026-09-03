@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  min-height: calc(100vh - $nav-height);
+  // margin-bottom: 1.2rem;
+  padding-top: $nav-height;
+  margin-left: $side-border-width;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    min-height: calc(100vh - ($nav-height * 0.6));
+    padding-top: calc($nav-height * 0.6);
+
+    margin-left: calc($side-border-width / 1.3);
+  }
+}

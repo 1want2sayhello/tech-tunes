@@ -1,0 +1,49 @@
+@use "../../../sass/variables" as *;
+
+.confirmation {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.content {
+  width: 80%;
+  height: clamp(220px, 40vh, 800px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba($white, 0.35);
+  border-radius: 0.8rem;
+  border: 2px solid $white;
+
+  text-align: center;
+}
+
+.content h1 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+.content h2 {
+  font-size: clamp(1rem, 2vw, 1.2em);
+}
+
+.button {
+  width: clamp(160px, 10vw, 250px);
+  height: 60px;
+  background-color: $border-color;
+  color: $white;
+  border-radius: 8px;
+  padding: 0.2rem;
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

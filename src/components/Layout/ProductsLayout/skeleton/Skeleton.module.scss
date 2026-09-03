@@ -1,0 +1,39 @@
+@use "../../../../sass/variables" as *;
+
+.statusSection {
+  min-height: 700px;
+  display: grid;
+  place-items: center;
+}
+
+.skeletonSection {
+  min-height: 700px;
+}
+
+.skeletonHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skeletonSort {
+  width: 160px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba($text-color, 0.12);
+}
+
+.skeletonGrid {
+  min-height: 580px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skeletonCard {
+  min-height: 320px;
+  border-radius: 1rem;
+  background: rgba($text-color, 0.12);
+}

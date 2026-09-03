@@ -1,0 +1,81 @@
+@use "../../../sass/variables" as *;
+
+.tileGrid {
+  width: 100%;
+  min-height: 350px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-content: center;
+}
+
+.tile {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.875;
+}
+
+.textTile {
+  color: $text-color;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 3px 1px 4px rgba($shadow, 0.45);
+}
+
+.imgTile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.primary {
+  background-color: $primary-color;
+}
+
+.secondary {
+  background-color: $secondary-color;
+}
+
+.textColor {
+  background-color: $text-color;
+
+  background-image: url("/graphics/grain-texture.png");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+}
+
+.shadow {
+  background-color: $shadow;
+}
+
+.card {
+  background: linear-gradient(20deg, $card-background, $secondary-color);
+}
+
+.feature {
+  background: linear-gradient(20deg, $card-background, $secondary-color);
+  grid-column: span 2;
+}
+
+@media (max-width: 780px) {
+  .tileGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: 120px;
+  }
+
+  .textTile {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+
+  .imgTile img {
+    object-fit: cover;
+    object-position: 40% 20%;
+  }
+}

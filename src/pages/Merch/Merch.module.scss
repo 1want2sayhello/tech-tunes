@@ -1,0 +1,33 @@
+.merch {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+  background-color: $card-background;
+}
+.hero,
+.overlay {
+  width: 100%;
+  height: 460px;
+}
+
+.overlay img,
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.overlay img {
+  object-fit: cover;
+}
+
+.merchTileGrid {
+  width: 100%;
+}

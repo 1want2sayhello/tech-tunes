@@ -1,0 +1,39 @@
+@use "../../../sass/variables" as *;
+
+.sizeContainer {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1.2rem;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(0.4rem, 3vw, 0.8rem);
+}
+
+.sizeSelectors {
+  width: 40px;
+  height: 40px;
+  background-color: rgba($primary-color, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+}
+
+.buttons .sizeSelectors:hover {
+  background-color: rgba($primary-color, 1);
+}
+
+.active {
+  background-color: rgba($primary-color, 1);
+}

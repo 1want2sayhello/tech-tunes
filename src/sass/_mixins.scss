@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+@mixin stripes {
+  background: linear-gradient(
+    45deg,
+    rgba($border-color, 0.22) 0%,
+    rgba($border-color, 0.22) 9%,
+
+    rgba($primary-color, 0.22) 9%,
+    rgba($primary-color, 0.22) 29%,
+
+    rgba($secondary-color, 0.5) 29%,
+    rgba($secondary-color, 0.5) 48%,
+
+    rgba($secondary-color-bright, 0.26) 48%,
+    rgba($secondary-color-bright, 0.26) 66%,
+
+    rgba($card-background, 0.2) 66%,
+    rgba($card-background, 0.2) 83%,
+
+    rgba($background-color, 0.22) 83%,
+    rgba($background-color, 0.22) 100%
+  );
+}
+
+@mixin buttonStyles {
+  border-radius: 8px;
+  background-color: $white;
+  cursor: pointer;
+  border: 0.115rem solid $border-color;
+  color: $text-color;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+@mixin buttonHover {
+  background-color: $border-color;
+  border: 0.115rem solid $white;
+  color: $white;
+}
+
+@mixin buttonActive {
+  transform: scale(0.95);
+}
+
+@mixin skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.12)
+  );
+
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.2s infinite linear;
+
+  @keyframes skeleton-loading {
+    from {
+      background-position: 200% 0;
+    }
+
+    to {
+      background-position: -200% 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}

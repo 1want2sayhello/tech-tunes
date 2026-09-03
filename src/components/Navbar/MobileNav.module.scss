@@ -1,0 +1,57 @@
+@use "../../sass/variables" as *;
+
+.mobileNav {
+  height: 100vh;
+  width: 80vw;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $border-color;
+  color: $background-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.mobileNav.isOpen {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dropdown li {
+  font-size: 1.6rem;
+}
+
+.dropdown li a:active {
+  color: $secondary-color;
+}
+
+.closeBtn {
+  background-color: transparent;
+  color: $background-color;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}

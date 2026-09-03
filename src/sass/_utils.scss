@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.card-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
