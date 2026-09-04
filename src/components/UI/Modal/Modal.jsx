@@ -36,7 +36,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
         tabIndex={-1}
       >
         <h2 id="modal-title"> {title} </h2>
-        {children}
+        <div className={styles.content}> {children} </div>
       </div>
     </div>,
     document.getElementById("modal-root"),

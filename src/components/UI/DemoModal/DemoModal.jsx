@@ -2,10 +2,10 @@ import Modal from "../Modal/Modal";
 import styles from "./DemoModal.module.scss";
 const DemoModal = ({ isOpen, onClose, onContinue }) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title=" Simply a head's up...">
+    <Modal isOpen={isOpen} onClose={onClose} title="Just a head's up...">
       <div>
         <p>
-          This is a demo project - no real payment will be processed. Hit
+          This is a demo project - no real payment will be processed. <br /> Hit
           continue to complete the demo, or go back to return to cart.
         </p>
       </div>
