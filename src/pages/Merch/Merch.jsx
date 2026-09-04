@@ -83,7 +83,7 @@ const Merch = () => {
         <TileLayout tiles={heroTiles} />
       </div>
       <ProductsLayout
-        title="App ● arel"
+        title="Merch"
         categoryLabel="Merch"
         isLoading={isLoading}
         products={includeNewArrivals}

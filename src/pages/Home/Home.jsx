@@ -10,9 +10,8 @@ import { useQuery } from "@tanstack/react-query";
 
 import Skeleton from "../../components/Layout/ProductsLayout/skeleton/Skeleton";
 import ProductsLayout from "../../components/Layout/ProductsLayout/ProductsLayout";
-import TechHero from "../../assets/images/home/tech-hero.webp";
+import TechHero from "../../assets/images/home/tech-hero.avif";
 
-import RockerHero from "../../assets/graphics/rocker-hand-hero.png";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -82,24 +81,6 @@ const Home = () => {
         </div>
       </div>
 
-      <section className={styles.techHero}>
-        <img src={TechHero} alt="recording studio tech hero" />
-      </section>
-      <section className={styles.rocker}>
-        <div>
-          <h1>Armed with Better Sound</h1>
-        </div>
-        <div className={styles.rockerImg}>
-          <img src={RockerHero} alt="rocker hero hand" />
-        </div>
-        <div>
-          <h1>
-            Made to be Played
-            <span className={styles.highlightText}> Loud </span>
-          </h1>
-        </div>
-      </section>
-
       {isError ? (
         <section className={styles.status}>
           <p> {error.message} </p>
@@ -139,6 +120,17 @@ const Home = () => {
           </section>
         </>
       )}
+      <section className={styles.techHero}>
+        <img src={TechHero} alt="recording studio tech hero" />
+        <div className={styles.techHeroOverlay}>
+          <h2>Revamp Your Music Studio</h2>
+          <Link to={"/tech"}>
+            <span className={`${styles.cta} ${styles.techHeroCta}`}>
+              <h4>Check Out Our Tech</h4>
+            </span>
+          </Link>
+        </div>
+      </section>
     </section>
   );
 };

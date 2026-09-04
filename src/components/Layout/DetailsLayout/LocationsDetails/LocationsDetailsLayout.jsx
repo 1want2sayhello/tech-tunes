@@ -8,6 +8,30 @@ const LocationsDetailsLayout = ({
   hours,
   contact,
 }) => {
+  const formatTime = (time) => {
+    if (!time || !time.includes(":")) return time;
+
+    const [hour, minute] = time.trim().split(":");
+    const hourNum = Number(hour);
+
+    if (Number.isNaN(hourNum)) return time;
+
+    const period = hourNum >= 12 ? "PM" : "AM";
+    const formattedHour = hourNum % 12 || 12;
+
+    return `${formattedHour}:${minute} ${period}`;
+  };
+
+  const formatHours = (hours) => {
+    if (!hours) return hours;
+
+    const parts = hours.split(/\s*[-–—]\s*/);
+
+    if (parts.length !== 2) return hours;
+
+    return `${formatTime(parts[0])} - ${formatTime(parts[1])}`;
+  };
+
   return (
     <section className={styles.locationDetailsLayout}>
       <div className={styles.locationImg}>
@@ -40,7 +64,7 @@ const LocationsDetailsLayout = ({
                   <span>
                     <strong> {day}: </strong>
                   </span>
-                  <span>{time}</span>
+                  <span>{formatHours(time)}</span>
                 </li>
               ))}
             </ul>

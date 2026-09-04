@@ -7,7 +7,7 @@ const LocationCard = ({ location }) => {
       <div className={styles.locationImg}>
         <img src={images.thumbnail} alt="" />
       </div>
-      <h2> {name} </h2>
+      <h2 className={styles.locationName}> {name} </h2>
       <p>
         {address.street} <br />
         {address.city}, {address.state} {address.zip}

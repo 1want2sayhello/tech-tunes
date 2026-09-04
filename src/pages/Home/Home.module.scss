@@ -256,7 +256,7 @@
 
   background: linear-gradient(
     to top,
-    rgba($primary-color, 0.6),
+    rgba($primary-color, 0.35),
     rgba(0, 0, 0, 0)
   );
 
@@ -268,51 +268,44 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
-/****  Rocker Hero Section ****/
-.rocker::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/graphics/grain-texture.png");
-  background-size: contain;
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.rocker {
-  position: relative;
+.techHeroOverlay {
   width: 100%;
-  height: 460px;
-  background: linear-gradient(
-    to right,
-    rgba($secondary-color, 0.8) 33%,
-    rgba($card-background, 0.3) 66%,
-    rgba($background-color, 0.2) 99%
-  );
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $white;
+  z-index: 10;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  overflow: hidden;
-}
-
-.rockerImg {
-  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.rockerImg img {
-  height: 105%;
+.techHeroOverlay h2 {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-family: $header-font;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba($shadow, 0.8);
+}
+
+.techHeroCta {
+  background-color: $card-background;
+  background-color: $text-color;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.techHeroCta:hover {
+  background-color: $card-background;
 }
 
 /***  Vinyl Section ***/

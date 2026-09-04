@@ -49,20 +49,19 @@
 
 .description {
   font-size: clamp(1rem, 1.2vw, 1.6rem);
+  margin-bottom: 2.2rem;
 }
 
 .info {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: first baseline;
-  margin-top: 2rem;
 }
 
 .hours,
 .contact {
   min-width: 300px;
-  text-align: center;
   font-size: clamp(1rem, 1vw, 1.2rem);
 }
 
@@ -77,6 +76,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  text-align: left;
+
   padding: 0.5rem;
 }
 

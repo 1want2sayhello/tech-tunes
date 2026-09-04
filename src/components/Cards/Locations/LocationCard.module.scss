@@ -5,11 +5,11 @@
   aspect-ratio: 3 / 4;
   border-radius: 6px;
 
-  background: rgba($card-background, 0.65);
+  background: rgba($secondary-color, 0.65);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
-  border: 1px solid rgba($white, 0.25);
+  border: 2.5px solid rgba($border-color, 0.25);
   box-shadow: 0 10px 30px rgba($shadow, 0.2);
 
   display: flex;
@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0.5rem;
 }
 
 .locationImg {
@@ -25,6 +26,13 @@
   border-radius: inherit;
   background-color: $secondary-color;
   margin-bottom: 1rem;
+}
+
+.locationName {
+  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+  color: $shadow;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 .locationImg img {
