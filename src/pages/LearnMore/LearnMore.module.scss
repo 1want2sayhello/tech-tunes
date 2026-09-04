@@ -10,8 +10,7 @@
   width: 100%;
   min-height: 360px;
   height: auto;
-  background-color: $card-background;
-  // background-color: $primary-color;
+  background-color: rgba($card-background, 0.7);
 }
 
 /*** INTRO ***/
@@ -79,28 +78,8 @@
   line-height: 1.8;
 }
 
-.gradientText {
-  background: linear-gradient(
-    to right,
-    $secondary-color-bright 10%,
-    $white 40%,
-    $secondary-color-bright 60%
-  );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-
-  -webkit-backdrop-filter: drop-shadow(2px 2px 3px rgba($shadow, 0.6));
-
-  filter: drop-shadow(2px 2px 3px rgba($shadow, 0.6));
-}
-
 .content p {
   max-width: 50ch;
-  color: rgba($white, 0.8);
   width: 100%;
   font-weight: 500;
   font-size: clamp(1rem, 1.4vw, 1.8rem);
