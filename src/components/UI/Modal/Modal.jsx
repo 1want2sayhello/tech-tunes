@@ -35,7 +35,9 @@ const Modal = ({ isOpen, onClose, title, children }) => {
         onClick={(e) => e.stopPropagation()}
         tabIndex={-1}
       >
-        <h2 id="modal-title"> {title} </h2>
+        <h2 id="modal-title" className={styles.modalTitle}>
+          {title}
+        </h2>
         <div className={styles.content}> {children} </div>
       </div>
     </div>,
