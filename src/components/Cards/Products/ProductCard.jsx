@@ -5,6 +5,11 @@ import styles from "./ProductCard.module.scss";
 const ProductCard = ({ product, showBadge = true }) => {
   if (!product) return null;
 
+  console.log(product.name, {
+    bestSeller: product.bestSeller,
+    isNewArrival: product.isNewArrival,
+  });
+
   const heading = product.title || product.name;
   const subheading =
     product.artist || product.brand || product.type || product.subtitle || "";

@@ -37,7 +37,7 @@ const Merch = () => {
   if (isError)
     return <ErrorMessage resource="merch" onRetry={refetch} error={error} />;
 
-  const bestSellers = defineBestSellers(merch, 10);
+  const bestSellers = defineBestSellers(merch, 3);
   const includeNewArrivals = defineNewArrivals(bestSellers, 2);
 
   const recentItem = {
