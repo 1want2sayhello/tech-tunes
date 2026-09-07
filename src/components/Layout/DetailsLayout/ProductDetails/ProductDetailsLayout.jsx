@@ -114,12 +114,16 @@ const ProductDetailsLayout = ({
             {sizeError && hasSizeOptions ? "Please Select A Size." : ""}
           </p>
 
-          <p className={styles.rating}> Rating: {rating} </p>
+          <p className={styles.rating}>
+            <strong>Rating:</strong> {rating}
+          </p>
           {meta.length > 0 && (
             <div className={styles.meta}>
               {meta.map((metaItem) => (
                 <div key={metaItem.label} className={styles.meta}>
-                  <span className={styles.label}>{metaItem.label}: </span>
+                  <span className={styles.label}>
+                    <strong> {metaItem.label}: </strong>
+                  </span>
                   <span className={styles.value}>{metaItem.value}</span>
                 </div>
               ))}
